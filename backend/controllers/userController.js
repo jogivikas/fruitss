@@ -2,9 +2,6 @@ import asyncHandler from "express-async-handler";
 import User from "../models/User.js";
 import { generateToken } from "../utils/generateToken.js";
 
-// @desc Register new user
-// @route POST /api/users/register
-// @access Public
 export const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password, isSeller } = req.body;
   if (!name || !email || !password) {

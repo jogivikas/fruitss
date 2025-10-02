@@ -2,7 +2,6 @@ import asyncHandler from "express-async-handler";
 import Order from "../models/Order.js";
 import Product from "../models/Product.js";
 
-// POST /api/orders
 export const addOrderItems = asyncHandler(async (req, res) => {
   const {
     orderItems,

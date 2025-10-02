@@ -34,7 +34,6 @@ export const getProductById = asyncHandler(async (req, res) => {
   }
 });
 
-// POST /api/products
 export const createProduct = asyncHandler(async (req, res) => {
   const { name, price, category, description, countInStock, image } = req.body;
   const product = new Product({
@@ -50,7 +49,6 @@ export const createProduct = asyncHandler(async (req, res) => {
   res.status(201).json(created);
 });
 
-// PUT /api/products/:id
 export const updateProduct = asyncHandler(async (req, res) => {
   const product = await Product.findById(req.params.id);
   if (!product) {
@@ -68,7 +66,6 @@ export const updateProduct = asyncHandler(async (req, res) => {
   res.json(updated);
 });
 
-// DELETE /api/products/:id
 export const deleteProduct = asyncHandler(async (req, res) => {
   const product = await Product.findById(req.params.id);
   if (!product) {
