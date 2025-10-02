@@ -1,0 +1,38 @@
+# Node.js dependencies
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs
+*.log
+*.out
+*.err
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# Build / cache
+dist/
+build/
+.cache/
+*.tsbuildinfo
+
+# Coverage
+coverage/
+
+# Uploads (optional - if you don't want to track uploaded files)
+uploads/
